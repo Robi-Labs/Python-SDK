@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "robiai"
+version = "0.1.0b0"
+description = "Official Python SDK for the Robi API: chat, images and video"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+keywords = ["robi", "robiai", "sdk", "llm", "ai", "openai-compatible", "image-generation", "video-generation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Developers",
+  "Typing :: Typed",
+]
+dependencies = ["httpx>=0.25"]
+
+[project.urls]
+Homepage = "https://console.robiai.com/docs"
+Repository = "https://github.com/Robi-Labs/Python-SDK"
+Issues = "https://github.com/Robi-Labs/Python-SDK/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=0.23"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robiai"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
