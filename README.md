@@ -1,4 +1,4 @@
-<img src="assets/banner.svg" alt="Robi SDK for Python" width="100%">
+<img src="https://raw.githubusercontent.com/Robi-Labs/Python-SDK/main/assets/banner.svg" alt="Robi SDK for Python" width="100%">
 
 [![PyPI](https://img.shields.io/pypi/v/robiai?style=flat&color=555)](https://pypi.org/project/robiai/)
 ![Python](https://img.shields.io/badge/python-%E2%89%A53.9-555?style=flat)
@@ -21,7 +21,7 @@ The official Python SDK for the [Robi API](https://console.robiai.com/docs). Pub
 | **Small footprint** | One dependency, `httpx`. Python 3.9+. |
 | **Sensible retries** | Exponential backoff on `429` and `5xx`, honoring `Retry-After`. Never retries `4xx` that won't change. |
 
-<img src="assets/flow.svg" alt="Your app calls the SDK, which calls the Robi API for chat, images and video" width="100%">
+<img src="https://raw.githubusercontent.com/Robi-Labs/Python-SDK/main/assets/flow.svg" alt="Your app calls the SDK, which calls the Robi API for chat, images and video" width="100%">
 
 ## Install
 
